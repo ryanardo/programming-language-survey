@@ -1,3 +1,7 @@
 .buttonPadding {
   padding-top: 10px;
 }
+
+.languageDescriptions {
+  display: none;
+}
