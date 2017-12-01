@@ -42,15 +42,19 @@ $(document).ready(function() {
     if (cSharpLanguage(typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest)) {
       console.log("cSharpLanguage");
       $("#formOutput").text("C# Programming Language!");
+      $("#cSharpLanguage").show();
     } else if (javaLanguage(typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest)) {
       console.log();
       $("#formOutput").text("Java Programming Language!");
+      $("#javaLanguage").show();
     } else if (phpLanguage(typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest)) {
       console.log();
       $("#formOutput").text("PHP Programming Language!");
+      $("#phpLanguage").show();
     } else if (rubyLanguage(typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest)) {
       console.log();
       $("#formOutput").text("Ruby Programming Language!");
+      $("#rubyLanguage").show();
     } else {
       console.log("Error! No language available for selected options!");
     }
