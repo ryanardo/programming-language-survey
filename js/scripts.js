@@ -42,19 +42,18 @@ $(document).ready(function() {
     if (cSharpLanguage(typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest)) {
       console.log("cSharpLanguage");
       $("#formOutput").text("C# Programming Language!");
-    } //End C#
-    if (javaLanguage(typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest)) {
+    } else if (javaLanguage(typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest)) {
       console.log();
       $("#formOutput").text("Java Programming Language!");
-    } //End Java
-    if (phpLanguage(typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest)) {
+    } else if (phpLanguage(typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest)) {
       console.log();
       $("#formOutput").text("PHP Programming Language!");
-    } //End PHP
-    if (rubyLanguage(typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest)) {
+    } else if (rubyLanguage(typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest)) {
       console.log();
       $("#formOutput").text("Ruby Programming Language!");
-    } //End Ruby
+    } else {
+      console.log("Error! No language available for selected options!");
+    }
 
   }); //End of the 'Form submit' function
 }); //End of the 'document ready' function
