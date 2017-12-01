@@ -8,6 +8,57 @@
     <title>Programming Language Survey</title>
   </head>
   <body>
+    <h1>Programming Language Survey</h1>
+
+    <form id="surveyQuestionnaire">
+      <h2>What type of business would you like to end up working for?</h2>
+      <select class="form-control" id="typeOfBusiness">
+        <option value="placeholder">Business types...</option>
+        <option value="bigAndEstablished" id="bigAndEstablished">Big, established business</option>
+        <option value="enterprise" id="enterprise">Enterprise level business</option>
+        <option value="startup" id="startup">New tech start-up</option>
+      </select>
+      <h2>What types of projects would you like to be working on?</h2>
+      <select class="form-control" id="projectTypes">
+        <option value="placeholder">Project types...</option>
+        <option value="internalSoftware" id="">Internal software</option>
+        <option value="highPerformanceProcessing" id="">High-performance processing</option>
+        <option value="userInterface" id="">User interface</option>
+        <option value="serverSide" id="serverSide">Server Side</option>
+        <option value="contentManagementSystems" id="contentManagementSystems">Content Management Systems</option>
+        <option value="interactiveWebApplications" id="interactiveWebApplications">Interactive Web Applications</option>
+      </select>
+      <h2>What type of developer do you think you are (frontend or backend)?</h2>
+      <select class="form-control" id="typeOfDevelopment">
+        <option value="placeholder">Tpes of development...</option>
+        <option value="frontEnd" id="frontEnd">Front end</option>
+        <option value="backEnd" id="backEnd">Back end</option>
+        <option value="notSure" id="notSure">Not quite sure yet ¯\_(ツ)_/¯</option>
+      </select>
+      <h2>Web or mobile development?</h2>
+      <select class="form-control" id="webOrMobileDevelopment">
+        <option value="placeholder">Web or mobile...</option>
+        <option value="webDevelopment" id="webDevelopment">Web development</option>
+        <option value="mobileDevelopment" id="mobileDevelopment">Mobile development</option>
+      </select>
+      <h2>Which of these companies would you most like to work for?</h2>
+      <select class="form-control" id="companyToWorkFor">
+        <option value="placeholder">Companies to work for...</option>
+        <option value="mac" id="mac">Apple</option>
+        <option value="governmentAgency" id="governmentAgency">Government Agency</option>
+        <option value="microsoft" id="microsoft">Microsoft</option>
+      </select>
+      <h2>Do any of these interest you?</h2>
+      <select class="form-control" id="userSoftwareInterest">
+        <option value="placeholder">Interesting choices...</option>
+        <option value="android" id="android">Android</option>
+        <option value="drupal" id="drupal">Drupal</option>
+        <option value="joomla" id="joomla">Joomla</option>
+        <option value="wordpress" id="wordpress">Wordpress</option>
+      </select>
+
+      <button type="submit" name="button">Submit your answers!</button>
+    </form>
 
   </body>
 </html>
