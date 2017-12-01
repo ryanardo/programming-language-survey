@@ -28,6 +28,13 @@ $(document).ready(function() {
         console.log("Error! Language");
       }
     } //End rubyLanguage function
+  function placeHolder (typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest) {
+    if ((typeOfBusiness = "placeHolder") || (companyToWorkFor = "placeHolder") || (projectTypes = "placeHolder") || (typeOfDevelopment = "placeHolder") || (webOrMobileDevelopment = "placeHolder") || (userSoftwareInterest = "placeHolder")) {
+      return true;
+    } else {
+      console.log("Error! Placeholder is true");
+    }
+  }
 
   //Front end logic
   $("form#surveyQuestionnaire").submit(function(event) {
@@ -39,22 +46,40 @@ $(document).ready(function() {
     var  companyToWorkFor = $("#companyToWorkFor").val();
     var  userSoftwareInterest = $("#userSoftwareInterest").val();
 
-    if (cSharpLanguage(typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest)) {
-      console.log("cSharpLanguage");
-      $("#formOutput").text("C# Programming Language!");
-    } //End C#
-    if (javaLanguage(typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest)) {
-      console.log();
-      $("#formOutput").text("Java Programming Language!");
-    } //End Java
-    if (phpLanguage(typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest)) {
-      console.log();
-      $("#formOutput").text("PHP Programming Language!");
-    } //End PHP
-    if (rubyLanguage(typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest)) {
-      console.log();
-      $("#formOutput").text("Ruby Programming Language!");
-    } //End Ruby
+    function cSharpLanguageOutput(typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest) {
+      if (cSharpLanguage(typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest)) {
+        $("#formOutput").text("C# Programming Language!");
+      } else {
+        console.log("C# programming language not selected.");
+      }
+    };
+    //End C#
+    function javaLanguageOutput(typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest) {
+      if (javaLanguage(typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest)) {
+        $("#formOutput").text(" Programming Language!")
+      } else {
+        console.log(" programming language not selected");
+      }
+    }
+    //End Java
+    function rubyLanguageOutput(typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest) {
+      if (rubyLanguage(typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest)) {
+        $("#formOutput").text(" Programming Language!")
+      } else {
+        console.log("Ruby programming language not selected");
+      }
+    }
+    //End Ruby
+    function phpLanguageOutput(typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest) {
+      if (phpLanguage(typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest)) {
+        $("#formOutput").text("PHP Programming Language!")
+      } else {
+        console.log("PHP programming language not selected");
+      }
+    }
+    //End PHP
 
-  }); //End of the 'Form submit' function
-}); //End of the 'document ready' function
+  //End of the 'Form submit' function
+  });
+//End of the 'document ready' function
+});
