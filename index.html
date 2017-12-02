@@ -10,117 +10,100 @@
   <body>
     <div class="container">
     <h1>Programming Language Survey</h1>
-    <form id="surveyQuestionnaire">
-      <!-- NOTE: TYPE BUSINESS -->
-      <h2>What type of business would you like to end up working for?</h2>
-      <select class="form-control" id="typeOfBusiness">
-        <option value="placeholder">Business types...</option>
-        <option value="bigAndEstablished" id="bigAndEstablished">Big, established business</option>
-        <option value="enterprise" id="enterprise">Enterprise level business</option>
-        <option value="startup" id="startup">New tech start-up</option>
-      </select>
-
-      <!-- NOTE: PROJECT TYPES -->
-      <h2>What types of projects would you like to be working on?</h2>
-      <select class="form-control" id="projectTypes">
-        <option value="placeholder">Project types...</option>
-        <option value="internalSoftware" id="internalSoftware">Internal software</option>
-        <option value="highPerformanceProcessing" id="highPerformanceProcessing">High-performance processing</option>
-        <option value="userInterface" id="userInterface">User interface</option>
-        <option value="serverSide" id="serverSide">Server Side</option>
-        <option value="contentManagementSystems" id="contentManagementSystems">Content Management Systems</option>
-        <option value="interactiveWebApplications" id="interactiveWebApplications">Interactive Web Applications</option>
-      </select>
-
-      <!-- NOTE:  FRONT END, OR BACK END -->
-      <h2>What type of developer do you think you are (frontend or backend)?</h2>
-      <select class="form-control" id="typeOfDevelopment">
-        <option value="placeholder">Tpes of development...</option>
-        <option value="frontEnd" id="frontEnd">Front end</option>
-        <option value="backEnd" id="backEnd">Back end</option>
-        <option value="notSure" id="notSure">Not quite sure yet ¯\_(ツ)_/¯</option>
-      </select>
-
-      <!-- NOTE:  WEB v MOBILE -->
-      <h2>Web or mobile development?</h2>
-      <select class="form-control" id="webOrMobileDevelopment">
-        <option value="placeholder">Web or mobile...</option>
-        <option value="webDevelopment" id="webDevelopment">Web development</option>
-        <option value="mobileDevelopment" id="mobileDevelopment">Mobile development</option>
-      </select>
-
-      <!-- NOTE:  FAV COMPANY -->
-      <h2>Which of these companies would you most like to work for?</h2>
-      <select class="form-control" id="companyToWorkFor">
-        <option value="placeholder">Companies to work for...</option>
-        <option value="mac" id="mac">Apple</option>
-        <option value="governmentAgency" id="governmentAgency">Government Agency</option>
-        <option value="microsoft" id="microsoft">Microsoft</option>
-      </select>
-
-      <!-- NOTE:  INTEREST -->
-      <h2>Do any of these interest you?</h2>
-      <select class="form-control" id="userSoftwareInterest">
-        <option value="placeholder">Interesting choices...</option>
-        <option value="android" id="android">Android</option>
-        <option value="drupal" id="drupal">Drupal</option>
-        <option value="joomla" id="joomla">Joomla</option>
-        <option value="wordpress" id="wordpress">Wordpress</option>
-      </select>
-
-      <div class="buttonPadding">
-        <button type="submit" name="button" class="btn btn-success">Submit your answers!</button>
-      </div>
-    </form>
-
-    <div>
-      <div class="languageDescriptions" id="cSharpLanguage">
-        <h3>C#</h3>
-        <p>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
-      </div>
-      <div class="languageDescriptions" id="javaLanguage">
-        <h3>JAVA</h3>
-        <p>Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.</p>
-      </div>
-      <div class="languageDescriptions" id="phpLanguage">
-        <h3>PHP</h3>
-        <p>PHP is by far the most popular backend language today, with 80 percent of websites utilizing it 'server-side'. It is perhaps best known for it's use in content management systems like Wordpress, Drupal, and Joomla. But the versatility of the language and the frameworks it powers make employment options numerous and diverse. If you're keen to work for a fast paced agency that builds websites for lots of clients, or maintain the security and stability of a huge complex of government websites, or if you like the idea of building out small sites for brands, businesses, and organizations - In any of these cases, PHP would be a great way to go.</p>
-      </div>
-      <div class="languageDescriptions" id="rubyLanguage">
-        <h3>RUBY</h3>
-        <p>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</p>
-      </div>
-    </div>
-
     <div class="row">
-      <div class="col-sm-5">
-        <!-- <h2>C# OUTPUT:</h2> -->
-      </div>
-      <div class="col-lg-7" id="cSharpOutput">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-5">
-        <!-- <h2>JAVA OUTPUT:</h2> -->
-      </div>
-      <div class="col-lg-7" id="javaOutput">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-5">
-        <!-- <h2>RUBY OUTPUT:</h2> -->
-      </div>
-      <div class="col-lg-7" id="rubyOutput">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-5">
-        <!-- <h2>PHP OUTPUT:</h2> -->
-      </div>
-      <div class="col-lg-7" id="phpOutput">
-      </div>
-    </div>
+      <div class="col-lg-7">
+        <form id="surveyQuestionnaire">
+          <p class="questionText">What type of business would you like to end up working for?</p>
+          <select class="form-control" id="typeOfBusiness">
+            <option value="placeholder">Business types...</option>
+            <option value="bigAndEstablished" id="bigAndEstablished">Big, established business</option>
+            <option value="enterprise" id="enterprise">Enterprise level business</option>
+            <option value="startup" id="startup">New tech start-up</option>
+          </select>
+          <p class="questionText">What types of projects would you like to be working on?</p>
+          <select class="form-control" id="projectTypes">
+            <option value="placeholder">Project types...</option>
+            <option value="internalSoftware" id="internalSoftware">Internal software</option>
+            <option value="highPerformanceProcessing" id="highPerformanceProcessing">High-performance processing</option>
+            <option value="userInterface" id="userInterface">User interface</option>
+            <option value="serverSide" id="serverSide">Server Side</option>
+            <option value="contentManagementSystems" id="contentManagementSystems">Content Management Systems</option>
+            <option value="interactiveWebApplications" id="interactiveWebApplications">Interactive Web Applications</option>
+          </select>
+          <p class="questionText">What type of developer do you think you are (frontend or backend)?</p>
+          <select class="form-control" id="typeOfDevelopment">
+            <option value="placeholder">Tpes of development...</option>
+            <option value="frontEnd" id="frontEnd">Front end</option>
+            <option value="backEnd" id="backEnd">Back end</option>
+            <option value="notSure" id="notSure">Not quite sure yet ¯\_(ツ)_/¯</option>
+          </select>
+          <p class="questionText">Web or mobile development?</p>
+          <select class="form-control" id="webOrMobileDevelopment">
+            <option value="placeholder">Web or mobile...</option>
+            <option value="webDevelopment" id="webDevelopment">Web development</option>
+            <option value="mobileDevelopment" id="mobileDevelopment">Mobile development</option>
+          </select>
+          <p class="questionText">Which of these companies would you most like to work for?</p>
+          <select class="form-control" id="companyToWorkFor">
+            <option value="placeholder">Companies to work for...</option>
+            <option value="mac" id="mac">Apple</option>
+            <option value="governmentAgency" id="governmentAgency">Government Agency</option>
+            <option value="microsoft" id="microsoft">Microsoft</option>
+          </select>
+          <p class="questionText">Do any of these interest you?</p>
+          <select class="form-control" id="userSoftwareInterest">
+            <option value="placeholder">Interesting choices...</option>
+            <option value="android" id="android">Android</option>
+            <option value="drupal" id="drupal">Drupal</option>
+            <option value="joomla" id="joomla">Joomla</option>
+            <option value="wordpress" id="wordpress">Wordpress</option>
+          </select>
 
+          <div class="buttonPadding">
+            <button type="submit" name="button" class="btn btn-success">Submit your answers!</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-5">
+        <div>
+          <div class="languageDescriptions" id="cSharpLanguage">
+            <div class="blueHeader2">
+              <h2>C#</h2>
+            </div>
+            <div class="well">
+              <p>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
+            </div>
+          </div>
+          <div class="languageDescriptions" id="javaLanguage">
+
+            <div class="blueHeader2">
+              <h2>JAVA</h2>
+            </div>
+            <div class="well">
+              <p>Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.</p>
+            </div>
+          </div>
+          <div class="languageDescriptions" id="phpLanguage">
+
+            <div class="blueHeader2">
+              <h2>PHP</h2>
+            </div>
+            <div class="well">
+              <p>PHP is by far the most popular backend language today, with 80 percent of websites utilizing it 'server-side'. It is perhaps best known for it's use in content management systems like Wordpress, Drupal, and Joomla. But the versatility of the language and the frameworks it powers make employment options numerous and diverse. If you're keen to work for a fast paced agency that builds websites for lots of clients, or maintain the security and stability of a huge complex of government websites, or if you like the idea of building out small sites for brands, businesses, and organizations - In any of these cases, PHP would be a great way to go.</p>
+            </div>
+          </div>
+          <div class="languageDescriptions" id="rubyLanguage">
+
+            <div class="blueHeader2">
+              <h2>RUBY</h2>
+            </div>
+            <div class="well">
+              <p>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   </body>
 </html>

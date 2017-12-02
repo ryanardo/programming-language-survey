@@ -28,6 +28,9 @@ $(document).ready(function() {
         console.log("Error! Language");
       }
     } //End rubyLanguage function
+  function resetForms() {
+    document.forms['myFormName'].reset();
+  }
 
   //Front end logic
   $("form#surveyQuestionnaire").submit(function(event) {
@@ -68,5 +71,7 @@ $(document).ready(function() {
     }
     //End Ruby
 
-  }); //End of the 'Form submit' function
-}); //End of the 'document ready' function
+  //End of the 'Form submit' function
+  });
+//End of the 'document ready' function
+});

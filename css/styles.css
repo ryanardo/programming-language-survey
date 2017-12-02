@@ -5,3 +5,18 @@
 .languageDescriptions {
   display: none;
 }
+
+.blueHeader1 {
+  color: #0b5394;
+  font-weight:bolder;
+}
+
+.blueHeader2 {
+  color: #0088ff;
+  font-weight:bolder;
+}
+
+.questionText {
+  padding-top: 10px;
+  font-weight: bolder;
+}
