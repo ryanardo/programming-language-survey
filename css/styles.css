@@ -6,17 +6,22 @@
   display: none;
 }
 
-.blueHeader1 {
-  color: #0b5394;
+.customLink {
+  color: #0088ff;
   font-weight:bolder;
 }
 
-.blueHeader2 {
-  color: #0088ff;
-  font-weight:bolder;
+.customHeading3 {
+  font-size: 16pt;
+  color: dodgerblue;
 }
 
 .questionText {
   padding-top: 10px;
   font-weight: bolder;
 }
+
+/*h2 {
+  font-size: 16pt;
+  color: dodgerblue;
+}*/

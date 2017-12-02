@@ -42,36 +42,28 @@ $(document).ready(function() {
     var  companyToWorkFor = $("#companyToWorkFor").val();
     var  userSoftwareInterest = $("#userSoftwareInterest").val();
 
-    // debugger;
     if (cSharpLanguage(typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest)) {
       $("#cSharpLanguage").show();
     } else {
       console.log("C# Programming Language Not Displayed");
     }
-    //End of C#
     // debugger;
     if (javaLanguage(typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest)) {
         $("#javaLanguage").show();
         } else {
           console.log("Java Programming Language Not Displayed");
         }
-    //End Java
     // debugger;
     if (phpLanguage(typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest)) {
         $("#phpLanguage").show();
       } else {
         console.log("PHP Programming Language Not Displayed");
     }
-    //End PHP
     // debugger;
     if (rubyLanguage(typeOfBusiness, companyToWorkFor, projectTypes, typeOfDevelopment, webOrMobileDevelopment, userSoftwareInterest)) {
         $("#rubyLanguage").show();
       } else {
         console.log("Ruby Programming Language Not Displayed");
     }
-    //End Ruby
-
-  //End of the 'Form submit' function
   });
-//End of the 'document ready' function
 });
