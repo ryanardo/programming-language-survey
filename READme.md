@@ -11,7 +11,7 @@ _Programming Language Survey page to for potential students of Epicodus to help 
 ## Setup/Installation Requirements
 
 * Download and install a web browser
-* Click on the following [link](https://ryanglenferris.github.io/Programming Language Survey) to view Ryan G Ferris online Programming Language Survey
+* Click on the following [link](https://ryanglenferris.github.io/programming-language-survey/) to view Ryan G Ferris online Programming Language Survey
 
 ## Known Bugs
 
